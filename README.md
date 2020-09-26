@@ -2,14 +2,11 @@
 
 
 ## Project Proposal
-
-A bunch of data came in and you and your team are tasked with migrating it to a production data base.
+To determine if there is a correlation between COVID cases and deaths and mobility per US state. To compare the Google mobilty data NYT COVID data.
 
 ## Data
 
 The project uses the following sources of data:
-
-* Apple Mobiltiy
 
 * Google Community Mobility Reports
 
@@ -20,15 +17,12 @@ The project uses the following sources of data:
 
 Performed ETL on the data. 
 
-* The sources of data that you will extract from.
+* The sources of data that we extracted were Google Community and NYT COVID csv data.
 
-* The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
+* The type of transformation needed for this data was filtering the google data to include the US data only. Cleaning the data to drop unnecessary columns from both data sets. As Microsoft SQL Server uses reserved keywords for defining, manipulating, and accessing database it was necessary to rename columns state and date.
 
-* The type of final production database to load the data into (relational or non-relational).
+* google_data and covid_data tables were created and the data was loaded into into Postgresql. Queries have been saved queries.sql file
 
-* The final tables or collections that will be used in the production database.
-
-You will be required to submit a final technical report with the above information and steps required to reproduce your ETL process.
 
 ## Project Report
 
